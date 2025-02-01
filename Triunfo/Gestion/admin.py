@@ -2,6 +2,8 @@ from django.contrib import admin
 from .models import Socios, Detalle_Socios, Reuniones, Asistencias, Ingresos, Egresos, Usuarios
 
 # Registro de modelos usando decoradores
+
+
 @admin.register(Socios)
 class SociosAdmin(admin.ModelAdmin):
     list_display = ('cedula', 'nombres', 'apellidos', 'celular', 'correo_electronico', 'fecha_nacimiento')
